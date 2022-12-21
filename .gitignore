@@ -1,6 +1,7 @@
+.gitignore
 Include
 Lib
 Scripts
 pyvenv.cfg
 .idea
-.gitignore
+_ _ pycache _ _
