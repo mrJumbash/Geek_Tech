@@ -8,7 +8,7 @@ while True:
         name_list = re.findall(r"\b[A-Z][a-zA-Z\'\-\. ]+[\s]+[a-zA-Z\'\-\. ]+\b", content)
         with open('names.txt', 'w') as file1:
             for name in name_list:
-                file1.write(f'{name.strip("")}\n')
+                file1.write(f'{name.strip()}\n')
 
     elif user_input == 2:
         mail_list = re.findall(r'[a-z0-9]+@[a-z0-9|-]+\.[a-z]+', content)
@@ -20,7 +20,7 @@ while True:
         files_list = re.findall(r'\s[A-Za-z]+\.[a-z0-9]+', content)
         with open('files.txt', 'w') as file3:
             for file in files_list:
-                file3.write(f'{file}\n')
+                file3.write(f'{file.strip()}\n')
 
     elif user_input == 4:
         color_list = re.findall(r'#[a-z0-9][0-9a-z]+', content)
