@@ -23,7 +23,7 @@ while True:
                 file3.write(f'{file.strip()}\n')
 
     elif user_input == 4:
-        color_list = re.findall(r'#[a-z0-9][0-9a-z]+', content)
+        color_list = re.findall(r'#[a-f0-9]+', content)
         with open('colors.txt', 'w') as file4:
             for color in color_list:
                 file4.write(f'{color}\n')
